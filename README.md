@@ -11,4 +11,4 @@ text from directly within Atom!  It's as simple as 1, or 2, or 3!
 * Hit ctrl-shift-p and type in DevLorem:Generate (generally just Generate will show the resulting command)
 * Use the context menu, right-click within atom and click "Insert DevLorem Text"
 
-![Using The DevLorem Package](devlorem.gif)
+![Using The DevLorem Package](https://raw.githubusercontent.com/JenkinsDev/devlorem-atom/master/devlorem.gif)
