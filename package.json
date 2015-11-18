@@ -1,7 +1,7 @@
 {
   "name": "dev-lorem",
   "main": "./lib/dev-lorem",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Atom package for DevLorem",
   "activationCommands": {
     "atom-workspace": "dev-lorem:generate"
