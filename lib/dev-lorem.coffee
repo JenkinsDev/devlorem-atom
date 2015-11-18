@@ -1,6 +1,5 @@
 {CompositeDisposable} = require 'atom'
 request = require 'request'
-cheerio = require 'cheerio'
 
 module.exports =
   subscriptions: null
@@ -15,11 +14,7 @@ module.exports =
 
   generate: ->
     if editor = atom.workspace.getActiveTextEditor()
-      request('https://devlorem.kovah.de/p', (err, res, body) ->
-          $ = cheerio.load(body);
-          text = "";
-          $('.content').find('p').each((i, v) ->
-              text += $(v).text() + "\n";
-            );
-          editor.insertText(text);
+      request('https://devlorem.kovah.de/api/5/p/json', (err, res, body) ->
+          text = ("#{line}" for line in JSON.parse(body));
+          editor.insertText(text.join('\n'));
         );

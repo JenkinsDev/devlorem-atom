@@ -12,7 +12,6 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "request": "2.66.0",
-    "cheerio": "0.19.0"
+    "request": "2.66.0"
   }
 }
