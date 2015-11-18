@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Insert DevLorem Text'
+      'command': 'dev-lorem:generate'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'dev-lorem'
+      'submenu': [
+        {
+          'label': 'Generate'
+          'command': 'dev-lorem:generate'
+        }
+      ]
+    ]
+  }
+]
